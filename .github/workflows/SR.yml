@@ -10,10 +10,10 @@ on:
     - 'v*'
   #  branches: 
   #    - master
-  schedule:
-    - cron: "38 2,5,8 * * 1-5"
-  watch:
-    types: [started]
+  #schedule:
+  #  - cron: "38 2,5,8 * * 1-5"
+  #watch:
+  #  types: [started]
    
 jobs:
   build:
