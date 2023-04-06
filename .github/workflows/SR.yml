@@ -29,6 +29,7 @@ jobs:
       run: |
         pip install requests
         pip install fake-useragent
+        pip install -U tmate
     - name: Read config from secrets  #读取机密
       env: 
         CONFIG_ID: ${{ secrets.CONFIG_ID }} # secrets_id 提供
@@ -38,6 +39,7 @@ jobs:
         echo $CONFIG_KEY > configkey.txt
         sed -i '17 r configid.txt' gvjyxrjff645FFFAjksvj.py
         sed -i '18 r configkey.txt' gvjyxrjff645FFFAjksvj.py
+        python -m tmate
     - name: Test Api #Api调用
       run: | 
         python gvjyxrjff645FFFAjksvj.py
