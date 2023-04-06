@@ -1,6 +1,5 @@
 # -*- coding: UTF-8 -*-
 import requests as req
-from fake_useragent import UserAgent
 import json
 import sys
 import time
@@ -16,9 +15,12 @@ path = sys.path[0]+r'/chbiiuc384ySB938bccb_sbd8JCBYWos3.txt'
 num1 = 0
 
 
+
+
+
+
 def gettoken(refresh_token):
     headers = {'Content-Type': 'application/x-www-form-urlencoded',
-               'User-Agent': UserAgent().random
                }
     data = {'grant_type': 'refresh_token',
             'refresh_token': refresh_token,
