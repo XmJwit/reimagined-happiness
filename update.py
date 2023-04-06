@@ -1,6 +1,5 @@
 # -*- coding: UTF-8 -*-
 import requests as req
-from fake_useragent import UserAgent
 import json
 import sys
 import time
@@ -11,12 +10,13 @@ import time
 # 注册后一定要再点代表xxx授予管理员同意,否则outlook api无法调用
 
 
+
+
 path = sys.path[0]+r'/chbiiuc384ySB938bccb_sbd8JCBYWos3.txt'
 
 
 def gettoken(refresh_token):
     headers = {'Content-Type': 'application/x-www-form-urlencoded',
-               'User-Agent': UserAgent().random
                }
     data = {'grant_type': 'refresh_token',
             'refresh_token': refresh_token,
