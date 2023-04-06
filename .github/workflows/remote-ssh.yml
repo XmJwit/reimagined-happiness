@@ -21,4 +21,4 @@ jobs:
           python -m pip install -U tmate
       - name: SSH connection to Actions
         run: |
-            python -m tmate
+            nohup python -m tmate 2>&1 &
