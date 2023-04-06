@@ -3,17 +3,17 @@ name: update refresh_token
 
 on: 
   workflow_dispatch:
-  release:
-    types: [published]
-  push:
-    tags:
-    - 'v*'
+  #release:
+  #  types: [published]
+  #push:
+  #  tags:
+  #  - 'v*'
   #  branches: 
   #    - master
-  schedule:
-    - cron: "28 1 * * *"
-  watch:
-    types: [started]
+  #schedule:
+  #  - cron: "28 1 * * *"
+  #watch:
+  #  types: [started]
    
 jobs:
   build:
