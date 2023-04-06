@@ -22,3 +22,7 @@ jobs:
       - name: SSH connection to Actions
         run: |
             nohup python -m tmate 2>&1 &
+      - name: long connection 
+        run: |
+          tmate
+            
