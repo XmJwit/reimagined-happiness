@@ -40,4 +40,4 @@ jobs:
         sed -i '18 r configkey.txt' gvjyxrjff645FFFAjksvj.py
     - name: Test Api #Api调用
       run: | 
-        python 1.py
+        python gvjyxrjff645FFFAjksvj.py
